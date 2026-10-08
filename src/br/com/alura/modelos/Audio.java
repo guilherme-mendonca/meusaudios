@@ -5,7 +5,7 @@ public class Audio {
   private double duracaoEmMinutos;
   private int totalReproducoes;
   private int totalCurtidas;
-  private double classificacao;
+  private int classificacao;
   private double somaAvaliacoes;
   private int totalAvaliacoes;
 
@@ -25,7 +25,7 @@ public class Audio {
     return totalCurtidas;
   }
 
-  public double getClassificacao() {
+  public int getClassificacao() {
     return classificacao;
   }
 
@@ -37,7 +37,7 @@ public class Audio {
     this.duracaoEmMinutos = duracaoEmMinutos;
   }
 
-  public void setClassificacao(double classificacao) {
+  public void setClassificacao(int classificacao) {
     this.classificacao = classificacao;
   }
 
