@@ -7,6 +7,7 @@ import br.com.alura.modelos.Podcast;
 
 public class Principal {
   public static void main(String[] args) {
+    // Criação do objeto minhaMusica a partir da classe Musica
     Musica minhaMusica = new Musica();
     minhaMusica.setTitulo("You could be mine");
     minhaMusica.setArtista("Guns'N Roses");

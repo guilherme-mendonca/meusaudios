@@ -1,13 +1,12 @@
 package br.com.alura.modelos;
 
 public class Audio {
+  // Atributos privados garantindo o encapsulamento, impendindo alterações diretas fora da classe
   private String titulo;
   private double duracaoEmMinutos;
   private int totalReproducoes;
   private int totalCurtidas;
   private int classificacao;
-  private double somaAvaliacoes;
-  private int totalAvaliacoes;
 
   public String getTitulo() {
     return titulo;
@@ -49,11 +48,7 @@ public class Audio {
     System.out.println("Classificação: " + classificacao);
   }
 
-  public void avalia(double nota) {
-    somaAvaliacoes += nota;
-    totalAvaliacoes++;
-  }
-
+  // Métodos com regras de negócio, em vez de permitir alterar o totalCurtidas diretamente com um setter
   public void curte() {
     this.totalCurtidas++;
   }

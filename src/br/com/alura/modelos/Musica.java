@@ -1,6 +1,8 @@
 package br.com.alura.modelos;
 
+// Herança (extends): Musica herda todos os atributos e métodos de Audio
 public class Musica extends Audio {
+  // Atributos específicos que apenas Musicas possuem
   private String album;
   private String artista;
   private String genero;
